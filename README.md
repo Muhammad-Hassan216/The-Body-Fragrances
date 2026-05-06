@@ -1,12 +1,16 @@
-# The Body Fragrances (E-commerce Android App)
+# The Body Fragrances Android Frontend
 
-This repository contains `The Body Fragrances` Android application built with Android Studio (Java/Kotlin). It includes a native Android front-end and a PHP-backed admin panel (separate).
+This repository contains the native Android frontend for The Body Fragrances e-commerce platform, built in Android Studio (Java/Kotlin).
 
-## What’s included
+## Project description
 
-- Android app source: `app/`
+The app allows users to browse perfume categories, view product details, place orders, and complete the customer flow from mobile. It is connected to a separate PHP/MySQL backend admin panel that manages products, categories, orders, and news/offers.
+
+## What is included
+
+- Android app source in `app/`
 - Gradle build scripts and wrapper
-- Resources and assets used by the app
+- Layouts, drawables, and assets used by the app
 
 ## Run locally (Android Studio)
 
@@ -14,13 +18,14 @@ This repository contains `The Body Fragrances` Android application built with An
 2. Let Gradle sync and download dependencies.
 3. Connect an Android device or use an emulator and Run the app.
 
-Notes:
-- Do not commit `local.properties` (SDK path) or `.idea/` — they are ignored by `.gitignore`.
-- Backend APIs are expected to be configured in `app/src/main/java/com/umt/ecommerce/utils/Constants.java`.
+## Configuration notes
+
+- Do not commit `local.properties` (SDK path) or `.idea/`; they are ignored by `.gitignore`.
+- Configure backend API URLs in `app/src/main/java/com/umt/ecommerce/utils/Constants.java`.
 
 ## Backend
 
-The admin panel and APIs are separate (PHP). Configure API endpoints in the Android app before running.
+The admin panel and APIs are maintained in a separate PHP repository. Configure API endpoints in the Android app before running.
 
 ## License
 
